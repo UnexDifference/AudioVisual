@@ -36,6 +36,8 @@ public class AudioSyncer : MonoBehaviour
             if (m_timer > timeStep)
                 OnBeat();
         }
+
+        m_timer += Time.deltaTime;
     }
 
     public virtual void OnBeat()
